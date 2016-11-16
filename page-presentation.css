@@ -305,10 +305,10 @@ footer img {
 @media only screen and (max-width: 710px) {
 
 	header nav ul {
-		margin-left: 25%;
+		margin-left: 250%;
 	}
 	header nav ul li {
-		margin-left: 10%;
+		margin-left: 5%;
 	}
 
 	article {
@@ -323,4 +323,44 @@ footer img {
 	}
 }
 
+header{
+    display: flex;
+}
 
+header #logo{
+	position: initial;
+}
+
+nav{
+	position: static;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul{
+	margin-left: 0; 
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 0;
+    justify-content: space-around;
+    width: 100%;
+}
+
+header nav ul li{
+    margin-left: 0;
+    margin-top: 0;
+}
+
+header nav ul li img{
+	margin-left: 0;
+}
+
+header nav ul li a{
+    margin-left: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
