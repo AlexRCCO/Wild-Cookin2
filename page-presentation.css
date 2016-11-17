@@ -347,15 +347,28 @@ footer img {
 		height: auto;
 	}
 	.art2 {
-		display: none;
+		background: url(img-content/present1.jpg);
+		background-size: cover;
+		width: 100%;
+	
 	}
 
 	.art1 {
-		height: 30%;
-		width: 100%;
+		display: none;
 	}
 
+	section article .art2 {
+			width: 100%;
+		}
+	
+	section article .art2 p{
+		color: #fff;
+		font-size: 10px;
+	}
 
+	section article .art2 h1 {
+		color: #fff;
+	}
 }
 
 
