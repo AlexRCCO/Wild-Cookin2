@@ -5,54 +5,60 @@
 
 }
 /*----------------------HEADER-----------------------------*/
-header {
-	position: relative;
-	background-color: black;
-	height: 140px;
-	width: 100%;
-}
-nav {
-	position: absolute;
-	margin-left: 38%;
-	size: 14px;
-	top: 0;
-	right: 0;
-	width: 100%;
+
+header{
+    display: flex;
+    background-color: #000;
+    height: 140px; 
+  }
+
+header #logo{
+	position: initial;
+	margin-left: 8%;
+    margin-top: 0.7%;
 }
 
-header nav ul {
-	list-style: none;
-	margin-left: 20%;
+nav{
+	position: static;
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+    width: 70%;
 }
 
-nav ul li{
-	margin-top: 1%;
-	float: left;
-	text-align: center;
-	margin-left: 10%;
-	margin-top: 2%;
+header nav ul{
+	margin-left: 0; 
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 0;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
 }
 
-nav ul li:hover img {
-	opacity: 0.7;
+header nav ul li{
+    margin-left: 0;
+    margin-top: 0;
 }
 
-nav ul li:hover a {
-	opacity: 0.7;
+header nav ul li img{
+	margin-left: 0;
 }
 
-nav ul li a {
-	display: block;
-	text-decoration: none;
-	color: #fff;
+header nav ul li a{
+    margin-left: 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
 }
 
-#logo {
-	position: absolute;
-	margin-left: 10%;
-	margin-top: 0.7%;
+nav ul li:hover img, nav ul li:hover a {
+    opacity: 0.7;
 }
-
 /*----------------------CARROUSSEL-------------------------*/
 .slider{
 	overflow: hidden;
@@ -250,17 +256,6 @@ footer img {
 		height: 82px;
 		margin-left: 5%;
 	}
-
-	header nav ul {
-		margin-left: 10%;
-	}
-	header nav ul li {
-		margin-left: 10%;
-	}
-	header nav ul li img {
-		width: 40px;
-		height: 40px;
-	}
 	
 	.slide {
 		height: auto;
@@ -287,13 +282,6 @@ footer img {
 	} 
 }
 @media only screen and (min-width: 479px) and (max-width: 885px) {
-
-	header nav ul {
-		margin-left: 13%;
-	}
-	header nav ul li {
-		margin-left: 7%;
-	}
 
 	article {
 		height: auto;
@@ -323,10 +311,21 @@ footer img {
 }
 
 @media only screen and (max-width: 480px) {
+	header {
+		height: 100px;
+	}
 
-	footer img {
-		height: 20px;
-		width: 20px;
+	header img {
+		width: 68px;
+		height: 82px;
+	}
+	header nav li img {
+		width: 40px;
+		height: 40px;
+	}
+
+	header nav li span {
+		display: none;
 	}
 
 	article .art3 p{
@@ -350,7 +349,6 @@ footer img {
 		background: url(img-content/present1.jpg);
 		background-size: cover;
 		width: 100%;
-	
 	}
 
 	.art1 {
@@ -358,9 +356,9 @@ footer img {
 	}
 
 	section article .art2 {
-			width: 100%;
-		}
-	
+		width: 100%;
+	}
+
 	section article .art2 p{
 		color: #fff;
 		font-size: 10px;
@@ -369,65 +367,10 @@ footer img {
 	section article .art2 h1 {
 		color: #fff;
 	}
-}
 
-
-/*	header nav ul {
-		margin-left: 250%;
-	}
-	header nav ul li {
-		margin-left: 5%;
+	footer img {
+		height: 20px;
+		width: 20px;
 	}
 
-	article {
-		height: 250px;
-	}
-
-	header nav ul li img {
-		margin-left: 15px;
-	}
-	header nav ul li a {
-		display: none;
-	}*/
-
-/*header{
-    display: flex;
 }
-
-header #logo{
-	position: initial;
-}
-
-nav{
-	position: static;
-    margin-left: 0;
-    display: flex;
-    align-items: center;
-}
-
-header nav ul{
-	margin-left: 0; 
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin-left: 0;
-    justify-content: space-around;
-    width: 100%;
-}
-
-header nav ul li{
-    margin-left: 0;
-    margin-top: 0;
-}
-
-header nav ul li img{
-	margin-left: 0;
-}
-
-header nav ul li a{
-    margin-left: 0;
-    margin-top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}*/
