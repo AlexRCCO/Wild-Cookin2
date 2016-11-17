@@ -136,7 +136,7 @@ article:hover img{
 footer {
 	margin-left: 5%;
 	margin-right: 5%;
-	border-top: solid 2px grey;
+/*	border-top: solid 2px grey;*/
 }
 
 footer img {
@@ -217,6 +217,23 @@ footer img {
 }
 
 @media only screen and (max-width: 480px) {
+	header {
+		height: 100px;
+	}
+
+	header img {
+		width: 68px;
+		height: 82px;
+	}
+	header nav li img {
+		width: 40px;
+		height: 40px;
+	}
+
+	header nav li span {
+		display: none;
+	}
+
 	div {
 		bottom: 15vh;
 	}
